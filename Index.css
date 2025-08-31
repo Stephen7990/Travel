@@ -1,0 +1,347 @@
+body{
+    padding:0px;
+    margin: 0px;
+    background-color: #383838;
+    text-align: center;
+}
+.jumbotron{
+    background-image:url(./stock-footage-man-worker-working-with-a-metal-product-and-welding-industrial-manufacturing-welding-metal-parts.webm);
+    height: 200px;
+    background-position: bottom center;
+}
+
+.video-background {
+  position: relative;
+  width: 100%;
+  height: 35vh;
+  overflow: hidden;
+}
+
+.video-background video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: center;
+  padding-top: 40vh;
+}
+
+#logo-pic {
+  height: 50px;
+  width: auto;
+}
+
+#logo-name {
+    height: 50px;
+    width: auto;
+}
+
+
+
+h1{
+    color:#ffffff;
+    font-family: 'Ruda', sans-serif;
+    font-size: 70px;
+    font-weight: 900;
+    margin: 0px;
+    padding-top: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+h2{
+    color: #ffffff;
+    font-family: 'Catamaran',sans-serif;
+    margin: 0px;
+    text-align: left;
+}
+h3{
+    color: #5bbed6;
+    font-family: 'Ruda',sans-serif;
+    font-size: 32px;
+    margin: 0px;
+    position: relative;
+    text-align: left;
+    text-transform: uppercase;
+}
+p{
+    color: rgba(255,255,255,0.75);
+    font-family: 'Pontano Sans',sans-serif;
+    margin: 0px;
+    text-align: left;
+}
+.hotel{
+    border: 1px solid #ffffff;
+    margin: 60px auto;
+    padding: 10px 0px 0px 0px;
+    width: 90%;
+}
+.hotel-img{
+    display: inline-block;
+    margin-top: 20px;
+}
+.hotel-description{
+    display: inline-block;
+    width: 70%;
+}
+.book{
+    margin-top: 30px;
+    width: 100%;
+}
+a{
+    background-color: #5bbed6;
+    color: #ffffff;
+    display: block;
+    font-family: 'Pontano Sans',sans-serif;
+    font-size: 16px;
+    padding: 14px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+ul{
+    padding: 0px;
+    margin: 10px 0px;
+}
+li{
+    margin:0px;
+    list-style: none;
+}
+.breadcrumb a {
+    background-color: inherit;
+}
+
+.breadcrumb {
+    display: inline;
+}
+
+.phone_color {
+    color: #5bbed6;
+}
+
+h4 {
+    color: white;
+}
+
+.carousel-row {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.carousel-section {
+  flex: 1 1 300px;
+  max-width: 400px;
+  text-align: center;
+}
+.swiper {
+  width: 100%;
+  height: 350px;
+}
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.caption {
+  position: absolute;
+  bottom: 16px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: #fff;
+  background: rgba(0,0,0,0.5);
+  font-size: 1.2em;
+  padding: 8px 0;
+  border-radius: 0 0 12px 12px;
+  width: 100%;
+}
+.swiper-slide {
+  position: relative;
+}
+
+
+.carousel-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  margin: 40px 0;
+}
+
+@media (max-width: 768px) {
+  .carousel-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+
+/* Ensure carousel sections stretch full width on mobile */
+@media (max-width: 600px) {
+  .carousel-grid {
+    grid-template-columns: 1fr !important;
+    gap: 16px;
+    margin: 20px 0;
+  }
+
+  .carousel-section {
+    width: 100%;
+  }
+
+  .swiper-slide img {
+    width: 100% !important;
+    height: auto;
+    border-radius: 12px;
+  }
+
+  .swiper {
+    width: 100% !important;
+  }
+}
+
+
+
+.carousel-section {
+  margin: 40px auto;
+  max-width: 500px;
+  text-align: center;
+}
+.swiper {
+  width: 100%;
+  height: 350px;
+}
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+
+.top-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #383838;
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #FFF;
+  height: 50px;
+  padding: 1em;
+
+  position: sticky;
+  top: 0px;
+  z-index: 9999;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu > li {
+  margin: 0 1rem;
+  overflow: hidden;
+}
+
+.menu-button-container {
+  display: none;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+  display: block;
+  background-color: #fff;
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 2px;
+}
+
+.menu-button::before {
+  content: '';
+  margin-top: -8px;
+}
+
+.menu-button::after {
+  content: '';
+  margin-top: 8px;
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+  margin-top: 0px;
+  transform: rotate(405deg);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button {
+  background: rgba(255, 255, 255, 0);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+  margin-top: 0px;
+  transform: rotate(-405deg);
+}
+
+@media (max-width: 700px) {
+  .menu-button-container {
+    display: flex;
+  }
+  .menu {
+    position: absolute;
+    top: 0;
+    margin-top: 50px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  #menu-toggle ~ .menu li {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  #menu-toggle:checked ~ .menu li {
+    border: 1px solid #333;
+    height: 2.5em;
+    padding: 0.5em;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .menu > li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.5em 0;
+    width: 100%;
+    color: white;
+    background-color: #222;
+  }
+  .menu > li:not(:last-child) {
+    border-bottom: 1px solid #444;
+  }
+}
